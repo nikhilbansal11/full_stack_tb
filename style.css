@@ -1,0 +1,221 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.nav-bar{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-bar li{
+    margin: 0 10px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.hero {
+    height: 70vh;
+    width:100%;
+    position: relative;
+}
+
+.back-image{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    filter: brightness(70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+}
+
+.content{
+    margin-left: 230px;
+    margin-right: 230px;
+}
+.o1 {
+    text-align: center;
+}
+
+.content-2 {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+
+    /* margin-left: 40px; */
+}
+
+/* .side-image{
+    /* display: flex; */
+ 
+.side-para {
+    padding: 40px;
+}
+
+/* .progress-bar{
+    background-color: darkgray;
+    height: 40px;
+    width: 100%;
+}
+
+.progress-bar2{
+    background-color: black;
+    height: 40px;
+    width: 90%;
+} */
+
+.progress-bar-background {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Progress bar itself */
+.progress-bar {
+    height:30px;
+    background-color: #666;
+    text-align: right;
+    line-height: 20px;
+    color: white;
+    padding-right: 10px;
+}
+
+.section2 {
+    height: 100px;
+    width: 100%;
+    background-color: #666;
+}
+
+.section-nav {
+    display: flex;
+    text-align: center;
+    padding: 30px;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    background-color: #fff;
+}
+
+.contact-info img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.contact-info .info {
+    width: 50%;
+    padding: 2rem;
+}
+
+.contact-form {
+    background-color: #f4f4f4;
+    padding: 2rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.contact-form button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.hero, .work-location, .portfolio-hero {
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.portfolio {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-info, .gallery {
+        flex-direction: column;
+    }
+    
+    .contact-info img, .contact-info .info {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
